@@ -1,12 +1,14 @@
 
 import './App.css';
+import BackToTop from './Components/BackToTop';
 import SideMenu from './Components/SideMenu';
 
 function App() {
   return (
     <div className="App">
-      <div className="root">
+      <div className="body" >
         <SideMenu />
+        <BackToTop />
       </div>
     </div>
   );
