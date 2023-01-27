@@ -10,6 +10,7 @@ export default function DarkModeComponent() {
         <Button variant='outlined' onClick={() => setDarkMode(prevMode => !prevMode)}
             style={{
                 border: `1px solid ${darkMode ? 'white' : 'black'}`,
+                background: 'none',
                 color: darkMode ? 'white' : 'black'
             }}
         >

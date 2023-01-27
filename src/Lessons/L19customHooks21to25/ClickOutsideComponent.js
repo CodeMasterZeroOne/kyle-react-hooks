@@ -8,11 +8,12 @@ export default function ClickOutsideComponent() {
 
     useClickOutside(modalRef, () => {
         if (open) setOpen(false)
+        // setOpen(!open)
     })
 
     return (
         <>
-            <Button variant='outlined' onClick={() => setOpen(true)}>Open</Button>
+            <Button variant='contained' onClick={() => setOpen(true)}>Open</Button>
             <div
                 ref={modalRef}
                 style={{
